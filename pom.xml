@@ -50,34 +50,4 @@
         </plugins>
     </build>
 
-
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <spring.profile.id>dev</spring.profile.id>
-            </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-            </dependencies>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <spring.profile.id>prod</spring.profile.id>
-            </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-devtools</artifactId>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
-
-
 </project>
